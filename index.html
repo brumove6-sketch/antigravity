@@ -1,1 +1,45 @@
-c603ea04e878e96bb3918c792065114c60210635
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coup d'main | Plateforme de Mise en Relation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { navy: { 800: '#0B132B', 900: '#050914' }, energy: '#FACC15' } } }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style> body { font-family: 'Inter', sans-serif; background-color: #050914; } .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); } </style>
+</head>
+<body class="bg-navy-900 text-white antialiased">
+    <nav class="fixed w-full z-50 glass px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-tighter">COUP<span class="text-energy">D'MAIN</span></div>
+        <div class="hidden md:flex space-x-6 items-center">
+            <a href="#" class="text-sm font-medium hover:text-energy transition">Espace Prestataire</a>
+            <a href="#" class="text-sm font-medium hover:text-energy transition">Espace Partenaire</a>
+            <a href="#" class="bg-energy text-navy-900 px-5 py-2 rounded-full font-bold hover:scale-105 transition transform">Espace Prospect</a>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-6 text-center min-h-screen flex flex-col justify-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight mb-6">
+                Votre <span class="text-energy">Mise en Relation</span> Haute Performance.
+            </h1>
+            <p class="text-lg lg:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                Connectez vos besoins aux meilleurs experts. Une plateforme dédiée aux partenaires, prestataires et prospects pour une efficacité totale et sécurisée.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-energy text-navy-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 transition">Lancer un projet</button>
+                <button class="border border-gray-500 hover:border-white px-8 py-4 rounded-full font-semibold text-lg transition">Devenir partenaire</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-10 px-6 border-t border-gray-800 text-center">
+        <p class="text-xs text-gray-600">&copy; 2026 Coup d'main. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
