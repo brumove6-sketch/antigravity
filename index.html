@@ -3,183 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coup d'main | Photovoltaïque Belgique & Primes Wallonie</title>
-    <meta name="description" content="Devenir indépendant énergétiquement en Belgique. Coup d'main vous accompagne pour vos travaux : Photovoltaïque, Pompes à chaleur, Toiture. Optimisation des primes Wallonie.">
-    <!-- Tailwind CSS v3 via CDN -->
+    <title>Coup d'main | Mise en Relation Sécurisée Belgique</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        navy: {
-                            800: '#0B132B',
-                            900: '#050914',
-                        },
-                        energy: '#FACC15', // Jaune Premium
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
+                    colors: { navy: { 800: '#0B132B', 900: '#050914' }, energy: '#FACC15' },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
                 }
             }
         }
     </script>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
         .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .btn-glow { box-shadow: 0 0 20px rgba(250, 204, 21, 0.4); transition: all 0.3s ease; }
-        .btn-glow:hover { box-shadow: 0 0 30px rgba(250, 204, 21, 0.6); transform: translateY(-2px); }
     </style>
 </head>
 <body class="bg-navy-900 text-white antialiased">
-    <!-- Navbar -->
+
     <nav class="fixed w-full z-50 glass px-6 py-4 flex justify-between items-center">
         <div class="text-2xl font-bold tracking-tighter">COUP<span class="text-energy">D'MAIN</span></div>
-        <a href="#simulateur" class="hidden md:inline-block bg-energy text-navy-900 px-5 py-2 rounded-full font-semibold hover:bg-yellow-300 transition">Estimer mes gains</a>
+        <a href="#triage" class="bg-energy text-navy-900 px-5 py-2 rounded-full font-semibold hover:bg-yellow-300 transition text-sm">ACCÈS PLATEFORME</a>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 px-6 lg:px-20 min-h-screen flex items-center">
-        <div class="absolute inset-0 bg-gradient-to-br from-navy-800 to-navy-900 -z-10"></div>
+    <section class="relative pt-32 pb-16 px-6 lg:px-20 flex items-center">
         <div class="max-w-4xl mx-auto text-center">
-            <div class="inline-block bg-blue-900/50 border border-blue-500/30 px-4 py-1 rounded-full text-blue-200 text-sm font-semibold mb-6">
-                🚀 Nouveaux barèmes Primes Wallonie 2026
-            </div>
             <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight mb-6">
-                Le moyen le plus sûr de <span class="text-energy">Devenir Indépendant Énergétiquement</span> en Belgique.
+                Mise en Relation <span class="text-energy">Sécurisée</span> en Belgique.
             </h1>
-            <p class="text-lg lg:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-                Photovoltaïque Belgique, Pompes à Chaleur, Toiture. Ne laissez plus vos devis au hasard. Audit logistique rationnel, sourcing au prix de gros, et mise en relation ultra-qualifiée.
+            <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
+                Audit rationnel, sourcing inversé et sécurisation des flux. Simple. Sec. Efficace.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#simulateur" class="bg-energy text-navy-900 px-8 py-4 rounded-full font-bold text-lg btn-glow">Commencer mon Audit Gratuit</a>
-                <a href="#services" class="border border-gray-500 hover:border-white px-8 py-4 rounded-full font-semibold text-lg transition">Découvrir nos services</a>
-            </div>
         </div>
     </section>
 
-    <!-- Pourquoi nous ? -->
-    <section id="pourquoi" class="py-20 px-6 bg-navy-800">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-16">L'approche <span class="text-energy">Coup d'main</span> : Zéro Blabla.</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass p-8 rounded-2xl">
-                    <div class="text-energy text-4xl mb-4">📊</div>
-                    <h3 class="text-xl font-bold mb-3">Audit Rationnel</h3>
-                    <p class="text-gray-400">Calcul automatique du rendement de votre toiture, déduction de la logistique, et identification des primes exactes.</p>
-                </div>
-                <div class="glass p-8 rounded-2xl">
-                    <div class="text-energy text-4xl mb-4">🏭</div>
-                    <h3 class="text-xl font-bold mb-3">Sourcing Direct</h3>
-                    <p class="text-gray-400">Nous court-circuitons les intermédiaires. Prix du matériel calculé à la source pour maximiser votre investissement.</p>
-                </div>
-                <div class="glass p-8 rounded-2xl">
-                    <div class="text-energy text-4xl mb-4">🛡️</div>
-                    <h3 class="text-xl font-bold mb-3">Transparence Totale</h3>
-                    <p class="text-gray-400">Mandataire de confiance. Algorithme de commissionnement juste. Vous gardez le contrôle total de vos données.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="py-20 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 border-l-4 border-energy pl-4">Nos Domaines d'Expertise</h2>
-            <div class="grid md:grid-cols-2 gap-10">
-                <div class="bg-gradient-to-br from-blue-900/40 to-navy-800 border border-blue-500/20 p-10 rounded-3xl hover:border-energy/50 transition">
-                    <h3 class="text-2xl font-bold mb-4">☀️ Énergie & Chaleur</h3>
-                    <p class="text-gray-300 mb-6">Expertise de pointe en <strong>Photovoltaïque Belgique</strong> et Pompes à chaleur. Sécurisez votre autonomie énergétique avec les meilleurs installateurs wallons.</p>
-                    <ul class="space-y-2 text-sm text-gray-400 font-medium">
-                        <li>✓ Calcul de rentabilité kWc</li>
-                        <li>✓ Optimisation onduleur & batteries</li>
-                        <li>✓ Dossier de subvention géré</li>
-                    </ul>
-                </div>
-                <div class="bg-gradient-to-br from-gray-800/40 to-navy-800 border border-gray-500/20 p-10 rounded-3xl hover:border-energy/50 transition">
-                    <h3 class="text-2xl font-bold mb-4">🏠 Enveloppe & Structure</h3>
-                    <p class="text-gray-300 mb-6">Rénovation de <strong>Toiture & Châssis</strong>. Isoler votre habitation est la première étape avant de produire votre énergie. Nous trouvons les couvreurs fiables.</p>
-                    <ul class="space-y-2 text-sm text-gray-400 font-medium">
-                        <li>✓ Isolation PEB</li>
-                        <li>✓ Remplacement complet</li>
-                        <li>✓ Déduction logistique des chantiers</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Simulateur de gain (Statique visuel) -->
-    <section id="simulateur" class="py-20 px-6 bg-energy text-navy-900">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl font-extrabold mb-6">Simulateur de Rentabilité Rapide</h2>
-            <p class="text-lg font-medium mb-10">Découvrez combien vous pouvez économiser avec notre système de prix source + primes Wallonie.</p>
+    <section id="triage" class="py-10 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
             
-            <div class="bg-white p-8 rounded-2xl shadow-2xl text-left">
-                <div class="grid md:grid-cols-3 gap-6 mb-8">
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">Code Postal</label>
-                        <input type="text" placeholder="Ex: 5000 Namur" class="w-full bg-gray-100 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-energy">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">Surface Toiture</label>
-                        <select class="w-full bg-gray-100 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-energy">
-                            <option>Moins de 30m²</option>
-                            <option>30 à 50m²</option>
-                            <option>Plus de 50m²</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">Projet</label>
-                        <select class="w-full bg-gray-100 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-energy">
-                            <option>Photovoltaïque</option>
-                            <option>Pompe à Chaleur</option>
-                            <option>Toiture</option>
-                        </select>
-                    </div>
+            <div class="glass p-8 rounded-2xl border-t-4 border-energy flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">ESPACE PROSPECT</h3>
+                    <p class="text-gray-400 mb-6 text-sm">Besoin d'un service (Bâtiment, Transport léger, IKEA). Mise en relation sous 60 min.</p>
                 </div>
-                <button class="w-full bg-navy-900 text-white font-bold py-4 rounded-xl hover:bg-navy-800 transition shadow-lg text-lg">
-                    Lancer l'audit en direct dans le chat 💬
-                </button>
+                <button onclick="window.location.href='#chatbot-container'" class="w-full bg-energy text-navy-900 font-bold py-3 rounded-xl btn-glow">Lancer ma demande</button>
             </div>
+
+            <div class="glass p-8 rounded-2xl border-t-4 border-green-500 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-green-500">PARTENAIRE</h3>
+                    <p class="text-gray-400 mb-6 text-sm">Apporteur d'affaires ? Intégrez notre flux et bénéficiez du sourcing inversé.</p>
+                </div>
+                <button onclick="window.location.href='#chatbot-container'" class="w-full border border-green-500 text-green-500 font-bold py-3 rounded-xl hover:bg-green-500 hover:text-white transition">S'affilier</button>
+            </div>
+
+            <div class="glass p-8 rounded-2xl border-t-4 border-blue-500 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-500">ARTISAN / RÉSEAU</h3>
+                    <p class="text-gray-400 mb-6 text-sm">Recevez des missions déjà filtrées, payées et prêtes à l'exécution sur votre secteur.</p>
+                </div>
+                <button onclick="window.location.href='#chatbot-container'" class="w-full border border-blue-500 text-blue-500 font-bold py-3 rounded-xl hover:bg-blue-500 hover:text-white transition">Rejoindre le réseau</button>
+            </div>
+
         </div>
     </section>
 
-    <!-- Footer Légal & RGPD (Verrou) -->
-    <footer class="bg-black py-10 px-6 border-t border-gray-800">
+    <footer class="bg-black py-10 px-6 border-t border-gray-800 mt-20">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 text-sm text-gray-500">
             <div>
-                <h4 class="text-white font-bold mb-4 text-lg">COUP D'MAIN</h4>
-                <p>La plateforme de mise en relation de nouvelle génération pour la Belgique Francophone.</p>
+                <h4 class="text-white font-bold mb-4 text-lg uppercase">Coup d'main</h4>
+                <p>Mandataire de mise en relation. Unité d'action. Souveraineté. Résultats.</p>
             </div>
             <div>
-                <h4 class="text-white font-bold mb-4">Informations Légales & Avertissement</h4>
-                <p class="mb-2"><strong>Rôle de Mandataire :</strong> Coup d'main agit exclusivement en tant que mandataire de mise en relation entre prospects et prestataires qualifiés.</p>
-                <p class="mb-2"><strong>Décharge de responsabilité :</strong> Nous déclinons toute responsabilité quant à l'exécution des travaux par les prestataires, au respect des délais ou à la qualité du matériel fourni par les tiers.</p>
-                <p><strong>Données (RGPD) :</strong> En utilisant notre simulateur ou notre assistant, vous acceptez le traitement de vos données aux seules fins de mise en relation et d'étude de faisabilité.</p>
+                <h4 class="text-white font-bold mb-4">Légalité & RGPD</h4>
+                <p class="mb-2"><strong>RGPD :</strong> En utilisant cet assistant, vous acceptez le traitement de vos données aux seules fins de mise en relation.</p>
+                <p><strong>Rôle :</strong> Mandataire exclusif. Nous sécurisons le flux ; l'artisan assure l'exécution.</p>
             </div>
-        </div>
-        <div class="max-w-6xl mx-auto mt-10 text-center text-xs text-gray-600">
-            &copy; 2026 Coup d'main. Tous droits réservés.
         </div>
     </footer>
 
-    <!-- CONTENEUR DU WIDGET IA -->
-    <!-- Le Snippet de Chatbase, Voiceflow ou Zapier viendra se greffer à l'intérieur de ce container -->
     <div id="chatbot-container" class="fixed bottom-6 right-6 z-50">
-        <!-- Bulle indicative en attendant l'intégration du vrai code JS -->
-        <div class="bg-navy-900 border border-energy p-4 rounded-2xl shadow-2xl flex items-start gap-4 max-w-xs animate-bounce" id="placeholder-bubble">
-            <div class="bg-energy text-navy-900 px-3 py-2 rounded-full font-extrabold shadow-lg shadow-energy/50">IA</div>
-            <div>
-                <p class="text-sm text-white font-bold mb-1">Système Opérationnel</p>
-                <p class="text-xs text-gray-400">Remplacez ce bloc par le Snippet JS de votre plateforme de chatbot.</p>
-            </div>
-            <button onclick="document.getElementById('placeholder-bubble').style.display='none'" class="text-gray-400 hover:text-white">&times;</button>
         </div>
-    </div>
 
 </body>
 </html>
